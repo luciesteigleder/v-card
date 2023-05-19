@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
-
 body {
     background-color: #FBFEF9;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
+    margin: 0;
 }
 
-/*LINKS*/
+/*LINKS
 
 a {
     text-decoration:none;
@@ -20,61 +19,114 @@ a:visited {
 a:hover {
     color: #FDB833;
 }
+*/
 
-/*HEADER*/
+/*CARD*/
 
-header {
-    background-color: #1789FC;
-    color: white;
-    font-weight: 500;
-}
-
-#nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-left: 100px;
-}
-
-#nav li {
-    list-style: none;
-    padding: 10px 20px;
+#card {
+    height: 80vh;
+    width: 80vw;
+    border: 3px solid #1789FC;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 75px;
+    padding-left: 20px;
+    display: grid; 
+    grid-template-columns: 3fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "introduction picture"
+    "about picture"
+    "skills picture"
+    "contact picture";
+    box-sizing: border-box;
 }
 
 /*INTRODUCTION*/
 
 #introduction {
-    height: 500px;
-    position: relative;
-    border: 2px solid #1789FC;
-    margin-right: 100px;
-    margin-left: 100px;
+    grid-area: introduction;
 }
 
-.introtext {
-    font-size: 60px;
-    line-height: 60px;
-    position:absolute;
-    top: 50%;
-    left: 200px;
-    transform: translate(-50%, -100%);
+h1 {
+    font-size: 35px;
+    line-height: 35px;
+    color: #1789FC;
 }
 
 img {
-    max-height: 500px;
-    max-width: 80%;
-    position: absolute;
-    right: 0px;
-    top: 0px;
+    grid-area: picture;
+    height: 79.2vh;
+    background-color: #1789FC;
 }
 
 /*ABOUT*/
 
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin:0;
+}
+
+p {
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0;
+}
+
 #about {
-    background-color: #1789FC;
+    /*background-color: #1789FC;*/
+    color: black;
+    grid-area: about;
+}
+
+#about button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 25px;
+    background-color: white;
+    border: none;
+    color: #FDAD0D;
+    margin: 15px;
+}
+
+#about button:hover {
+    background-color: #FDAD0D;
     color: white;
 }
 
-h2 {
-    
+/*SKILLS*/
+#skills {
+    /*background-color: #1789FC;*/
+    color: black;
+    grid-area: skills;
+}
+
+/*CONTACT*/
+#contact {
+    /*background-color: #1789FC;*/
+    color: black;
+    grid-area: contact;
+}
+
+#contactlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding-right:15px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    color: #1789FC;
 }

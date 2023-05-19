@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,48 +13,44 @@
 </head>
 <body>
 
-    <header>
-        <ul id="nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#latestwork">Latest work</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
+    <div id="card">
+        <section id="introduction">
+            <h1>Hi, I am <br>Lucie <br>Steigleder</h1>
+        </section>
 
-    <section id="introduction">
-        <h1>Hi, I'm Lucie</h1>
-        <img src="/v-card/asset/presentation.png" alt="lucie">
-        <p class="introtext">Welcome <br> to my <br>v-card</p>
-    </section>
+        <section id="about">
+            <h2>About me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, ipsum.</p>
+            <button class="b1">Resume</button>
+            <button class="b2">Portfolio</button>
+        </section>
 
-    <section id="about">
-        <h2>About me</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis rem labore aut nesciunt? Beatae, aliquid dolorem? Enim illo, in autem quaerat quibusdam veniam? Unde sint expedita voluptas, beatae molestias quis?</p>
-        <button>Resume</button>
-        <button>Portfolio</button>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+        </section>
 
-    <section id="latestwork">
-        <h2>Latest work</h2>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <ul id="contactlist">
+                <li>
+                    <h3>Email</h3>
+                    <p>luciesteigleder@gmail.com</p>
+                </li>
+                <li>
+                    <h3>Phone</h3>
+                    <p>+32 123 456 789</p>
+                </li>
+                <li>
+                    <h3>Find me on</h3>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </li>
+            </ul>
+        </section>
+        <img src="/v-card/asset/presentation2.png" alt="lucie">
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <ul id="contactlist">
-            <li>
-                <h3>Contact</h3>
-                <p>luciesteigleder@gmail.com</p>
-            </li>
-            <li>
-                <h3>Phone</h3>
-                <p>+32 123 456 789</p>
-            </li>
-            <li>
-                <h3>Find me on</h3>
-                <p>Twitter - LinkedIn - Instagram</p>
-            </li>
-        </ul>
-    </section>
+    </div>
 
 </body>
 </html>
