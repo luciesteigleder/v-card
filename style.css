@@ -1,10 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+
 body {
-    background-color: #FFF8EB;
-    color: blue;
+    background-color: #FBFEF9;
+    font-family: 'Poppins';
+    font-weight: 300;
 }
 
+/*LINKS*/
+
+a {
+    text-decoration:none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #FDB833;
+}
+
+/*HEADER*/
+
 header {
-    background-color: #FDB833;
-    color: #1789FC;
-    border: 2px solid red;
+    background-color: #1789FC;
+    color: white;
+    font-weight: 500;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 100px;
+}
+
+#nav li {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+/*INTRODUCTION*/
+
+#introduction {
+    height: 500px;
+    position: relative;
+    border: 2px solid #1789FC;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.introtext {
+    font-size: 60px;
+    line-height: 60px;
+    position:absolute;
+    top: 50%;
+    left: 200px;
+    transform: translate(-50%, -100%);
+}
+
+img {
+    max-height: 500px;
+    max-width: 80%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+/*ABOUT*/
+
+#about {
+    background-color: #1789FC;
+    color: white;
+}
+
+h2 {
+    
 }
