@@ -27,94 +27,104 @@ a:hover {
     height: 80vh;
     width: 80vw;
     border: 3px solid #1789FC;
+    border-right: none;
     margin-right: 100px;
     margin-left: 100px;
     margin-top: 75px;
     padding-left: 20px;
-    display: grid; 
-    grid-template-columns: 3fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    "introduction picture"
-    "about picture"
-    "skills picture"
-    "contact picture";
     box-sizing: border-box;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-/*INTRODUCTION*/
 
-#introduction {
-    grid-area: introduction;
+/*FIRST COLUMN*/
+.title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    width: 45%;
+    box-sizing: border-box;
+    padding-right: 75px;
 }
 
 h1 {
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 55px;
+    line-height: 55px;
     color: #1789FC;
 }
 
-img {
-    grid-area: picture;
-    height: 79.2vh;
-    background-color: #1789FC;
-}
-
-/*ABOUT*/
 
 h2 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 400;
     margin:0;
-}
-
-p {
-    font-size: 12px;
-    line-height: 12px;
-    margin: 0;
 }
 
 #about {
     /*background-color: #1789FC;*/
     color: black;
-    grid-area: about;
 }
 
 #about button {
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 500;
     border-radius: 25px;
-    background-color: white;
+    background-color: #DE9502;
+    color: white;
     border: none;
-    color: #FDAD0D;
     margin: 15px;
+    margin-top: 30px;
+    padding: 5px 15px;
 }
 
 #about button:hover {
-    background-color: #FDAD0D;
-    color: white;
+    background-color: white;
+    color: #DE9502;
 }
 
-/*SKILLS*/
-#skills {
+p {
+    font-size: 16px;
+    line-height: 15px;
+    font-weight: 100;
+    margin: 0;
+}
+
+/*SECOND COLUMN*/
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 15px;
+}
+
+.skills-icons {
     /*background-color: #1789FC;*/
     color: black;
-    grid-area: skills;
+    display: flex;
+    flex-direction: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
-/*CONTACT*/
+.skills-icons div {
+    margin: 10px;
+    width: 40%;
+}
+
 #contact {
     /*background-color: #1789FC;*/
     color: black;
-    grid-area: contact;
 }
 
 #contactlist {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
@@ -126,7 +136,21 @@ li {
 
 h3 {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
     color: #1789FC;
+}
+
+i {
+    font-size: 30px;
+    padding: 0 15px;
+}
+
+/*THIRD COLUMN*/
+
+img {
+    height: 79.2vh;
+    background-color: #1789FC;
 }
